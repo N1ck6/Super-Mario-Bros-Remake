@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pygame Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+        <link rel="manifest" href="manifest.webmanifest">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="o-scroll" id="js-scroll" data-scroll-container>
+            <div data-scroll-section>
+                <div class="o-container">
+                    <header class="c-header" id="header">
+                        <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
+                            <div class="o-layout">
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-position="top" data-scroll-target="#header">
+                                    <div class="u-text-left">
+                                        <img draggable="false" src="images/python.png" width="50px" height="50px">
+                                    </div>
+                                </div>
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top" data-scroll-target="#header">
+                                    <div class="u-text-right">
+                                        <img draggable="false" src="images/pygame.png" width="140px" height="80px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="c-header_title o-h1" data-scroll>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="3" data-scroll-position="top">Игра</span>
+                            </span>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="2" data-scroll-position="top">На Python</span>
+                            </span>
+                        </h1>
+                        <hr class="c-header_line" data-scroll data-scroll-offset="100" />
+                    </header>
+                </div>
+            </div>
+            <section data-scroll-section>
+                <div class="o-container">
+                    <div class="c-summary" data-scroll>
+                        <div class="o-layout -gutter">
+                            <div class="o-layout_item u-2/5@from-medium">
+                                <p class="c-summary_text">
+                                    Школьный проект по воссозданию популярной ретро-игры <br><a href="https://ru.wikipedia.org/wiki/Super_Mario_Bros." target="_blank" rel="noopener noreferrer">Super Mario Bros</a> на языке Python.
+                                </p>
+                            </div>
+                            <div class="o-layout_item u-3/5@from-medium">
+                                <ul class="c-summary_list">
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#info" data-scroll-to>
+                                            Информация
+                                            <span class="c-summary_list_icon u-icon">
+                                            <svg viewBox="0 0 128 128" width="30px" height="30px"><path d="M 68.00,35.50 C 68.00,35.50 68.00,43.50 68.00,43.50 68.00,43.50 60.00,43.50 60.00,43.50 60.00,43.50 60.00,35.50 60.00,35.50 60.00,35.50 68.00,35.50 68.00,35.50 Z M 68.00,54.50 C 68.00,54.50 68.00,94.50 68.00,94.50 68.00,94.50 60.00,94.50 60.00,94.50 60.00,94.50 60.00,54.50 60.00,54.50 60.00,54.50 68.00,54.50 68.00,54.50 Z M 64.00,1.00 C 29.30,1.00 1.00,29.30 1.00,64.00 1.00,98.70 29.30,127.00 64.00,127.00 98.70,127.00 127.00,98.70 127.00,64.00 127.00,29.30 98.70,1.00 64.00,1.00 Z M 64.00,119.00 C 33.70,119.00 9.00,94.30 9.00,64.00 9.00,33.70 33.70,9.00 64.00,9.00 94.30,9.00 119.00,33.70 119.00,64.00 119.00,94.30 94.30,119.00 64.00,119.00 Z"/></path></svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#scroll-direction" data-scroll-to>
+                                            Документация
+                                            <span class="c-summary_list_icon u-icon">
+                                            <svg viewBox="0 0 30 30" height="30px"><path d="M 22.22,14.44 C 22.22,14.44 22.22,15.56 22.22,15.56 22.22,15.56 7.78,15.56 7.78,15.56 7.78,15.56 7.78,14.44 7.78,14.44 7.78,14.44 22.22,14.44 22.22,14.44 Z M 22.22,11.11 C 22.22,11.11 22.22,12.22 22.22,12.22 22.22,12.22 7.78,12.22 7.78,12.22 7.78,12.22 7.78,11.11 7.78,11.11 7.78,11.11 22.22,11.11 22.22,11.11 ZM 22.22,17.78 C 22.22,17.78 22.22,18.89 22.22,18.89 22.22,18.89 7.78,18.89 7.78,18.89 7.78,18.89 7.78,17.78 7.78,17.78 7.78,17.78 22.22,17.78 22.22,17.78 Z M 18.89,0.00 C 18.89,0.00 18.33,0.00 18.33,0.00 18.33,0.00 6.67,0.00 6.67,0.00 5.44,0.00 4.44,1.00 4.44,2.22 4.44,2.22 4.44,27.78 4.44,27.78 4.44,29.00 5.44,30.00 6.67,30.00 6.67,30.00 23.33,30.00 23.33,30.00 24.56,30.00 25.56,29.00 25.56,27.78 25.56,27.78 25.56,8.33 25.56,8.33 25.56,8.33 25.56,7.78 25.56,7.78 25.56,7.78 18.89,0.00 18.89,0.00 Z M 18.89,1.67 C 18.89,1.67 24.11,7.78 24.11,7.78 24.11,7.78 20.00,7.78 20.00,7.78 19.44,7.78 18.89,7.22 18.89,6.67 18.89,6.67 18.89,1.67 18.89,1.67 Z M 24.44,27.78 C 24.44,28.33 24.00,28.89 23.33,28.89 23.33,28.89 6.67,28.89 6.67,28.89 6.11,28.89 5.56,28.44 5.56,27.78 5.56,27.78 5.56,2.22 5.56,2.22 5.56,1.67 6.00,1.11 6.67,1.11 6.67,1.11 17.78,1.11 17.78,1.11 17.78,1.11 17.78,6.67 17.78,6.67 17.78,7.89 18.78,8.89 20.00,8.89 20.00,8.89 24.44,8.89 24.44,8.89 24.44,8.89 24.44,27.78 24.44,27.78 Z M 15.56,4.44 C 15.56,4.44 15.56,5.56 15.56,5.56 15.56,5.56 7.78,5.56 7.78,5.56 7.78,5.56 7.78,4.44 7.78,4.44 7.78,4.44 15.56,4.44 15.56,4.44 Z M 22.22,21.11 C 22.22,21.11 22.22,22.22 22.22,22.22 22.22,22.22 7.78,22.22 7.78,22.22 7.78,22.22 7.78,21.11 7.78,21.11 7.78,21.11 22.22,21.11 22.22,21.11 Z M 15.56,7.78 C 15.56,7.78 15.56,8.89 15.56,8.89 15.56,8.89 7.78,8.89 7.78,8.89 7.78,8.89 7.78,7.78 7.78,7.78 7.78,7.78 15.56,7.78 15.56,7.78 Z M 22.22,24.44 C 22.22,24.44 22.22,25.56 22.22,25.56 22.22,25.56 7.78,25.56 7.78,25.56 7.78,25.56 7.78,24.44 7.78,24.44 7.78,24.44 22.22,24.44 22.22,24.44 Z"/></path></svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#files" data-scroll-to>
+                                            Файлы
+                                            <span class="c-summary_list_icon u-icon">
+                                            <svg viewBox="0 0 100 100" height="30px"><path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/></path>
+                                            </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="info">
+                    <div class="o-layout -gutter">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3>
+                                        <b>Информация</b>
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            <a href="https://ru.wikipedia.org/wiki/Super_Mario_Bros." target="_blank" rel="noopener noreferrer"><b>Super Mario Bros</b></a> — видеоигра в жанре платформера, разработанная и выпущенная в 1985 году японской компанией Nintendo. Она была занесена в «Книгу рекордов Гиннесса» как самая продаваемая игра в истории. <br><b>Сюжет:</b><br>Марио отправляется в путешествие по Грибному Королевству, чтобы найти <a href="https://ru.wikipedia.org/wiki/Принцесса_Пич" target="_blank" rel="noopener noreferrer"><b>принцессу Пич</b></a>, которую <a href="https://ru.wikipedia.org/wiki/Боузер" target="_blank" rel="noopener noreferrer"><b>Боузер</b></a> заточил в своём замке. Во время путешествия Марио натыкается на разнообразных врагов, к примеру: <a href="https://ru.wikipedia.org/wiki/Гумба" target="_blank" rel="noopener noreferrer"><b>Гумба</b></a> и <a href="https://ru.wikipedia.org/wiki/Купа-трупа" target="_blank" rel="noopener noreferrer"><b>Купа Трупа</b></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <div class="o-image" data-scroll>
+                                        <img class="c-speed-block_image" src="https://www.video-games-museum.com/en/boxart/Nes/5845_eu-Super-Mario-Bros.jpg" alt="Super Mario Bros image">
+                                    </div>
+                                </div>
+                                <p class="c-speed-block_title" data-scroll>
+                                    Обложка Игры
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout -gutter">
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <div class="o-image" data-scroll>
+                                        <img class="c-speed-block_image" src="images/code1.png" alt="Code image">
+                                    </div>
+                                </div>
+                                <p class="c-speed-block_title" data-scroll>
+                                    Код Игры
+                                </p>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3>
+                                        <b>Информация</b>
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            <a href="https://ru.wikipedia.org/wiki/Super_Mario_Bros." target="_blank" rel="noopener noreferrer"><b>Super Mario Bros</b></a> — видеоигра в жанре платформера, разработанная и выпущенная в 1985 году японской компанией Nintendo. Она была занесена в «Книгу рекордов Гиннесса» как самая продаваемая игра в истории. <br><b>Сюжет:</b><br>Марио отправляется в путешествие по Грибному Королевству, чтобы найти <a href="https://ru.wikipedia.org/wiki/Принцесса_Пич" target="_blank" rel="noopener noreferrer"><b>принцессу Пич</b></a>, которую <a href="https://ru.wikipedia.org/wiki/Боузер" target="_blank" rel="noopener noreferrer"><b>Боузер</b></a> заточил в своём замке. Во время путешествия Марио натыкается на разнообразных врагов, к примеру: <a href="https://ru.wikipedia.org/wiki/Гумба" target="_blank" rel="noopener noreferrer"><b>Гумба</b></a> и <a href="https://ru.wikipedia.org/wiki/Купа-трупа" target="_blank" rel="noopener noreferrer"><b>Купа Трупа</b></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="scroll-direction">
+                    <div class="c-direction-block_wrapper">
+                        <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#scroll-direction">
+                            <div class="c-section_infos_inner" data-scroll>
+                                <h3>
+                                    Документация
+                                </h3>
+                                <div class="c-sections_infos_text u-text">
+                                    <p>
+                                        Import text from documentation .txt file HERE
+                                    </p>
+                                </div>
+                                <div margin-left="auto" margin-right="0">
+                                <div class="c-speed-block" data-scroll data-scroll-speed="1">
+                                <div data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <iframe style="text-align:center" seamless width="780px" height="570px" frameborder="0" src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/SchoolPygame/Project/blob/main/test/example.docx?raw=true&embedded=true">
+                                    Browser doesn't support documents on webpage
+                                    </iframe>
+                                </div>
+                                </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="files">
+                    <div class="o-layout">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos" data-scroll>
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3>
+                                        Файлы
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            Stagger those smooth animations using delays to create a rushing or dragging effect.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-cta_content">
+                            <div class="o-layout -gutter">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-cta_section">
+                                        <a class="c-cta_button o-button is-inview" href="https://github.com/SchoolPygame/Project" target="_blank" data-scroll="" data-scroll-offset="100">
+                                            <span class="o-button_icon">
+                                            <svg viewBox="0 0 100 100" height="30px"><path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/></path></svg>
+                                            </span>
+                                            Check on Github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section -fixed" data-scroll-section data-persistent>
+                <div class="o-container" id="fixed-elements">
+                    <div class="o-layout">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3>
+                                        Fixed code
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            May come handy
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                <div class="c-fixed_target" id="fixed-target"></div>
+                                <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url('images/code1.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
