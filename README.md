@@ -34,6 +34,7 @@ Everything else is the same as in the original game.
 ## Controls
 
 * A: Left
+* S: Crouch
 * D: Right
 * Q: Throw a fireball
 * Space: Jump
