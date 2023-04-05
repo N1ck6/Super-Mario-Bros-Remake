@@ -20,23 +20,21 @@
 ## Dependencies	
 
 ```html
-* pygame	
-* Pillow
-* urllib
+* pygame
 ```
 
 ## Info
 
 There are four levels. On last you will encounter a final boss.<br>
-You can change sounds, name or buttons in settings.<br>
-Everything else is the same as in the original game.
+You can change volume, name or buttons in settings.<br>
+Almost everything is the same as in the original game.
 
 ## Controls
 
 * A: Left
 * S: Crouch
 * D: Right
-* Q: Throw a fireball
+* Left Ctrl: Throw a fireball
 * Space: Jump
 * Esc: Hold for 2 seconds in game to quit
 
