@@ -358,9 +358,82 @@ button:hover {
 	text-decoration: none
 }
 
+body {
+        background-color: #d4c9c9;
+        color: #414141;
+     }
+
+.dark-mode {
+   background-color: #383838;
+   color: #fff;
+}
+     
+.switch-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    margin-top: 30px;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+     .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+     }
+
+     input:checked + .slider {
+        background-color: #2196F3;
+     }
+
+     input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+     }
+
+     input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+     }
+
+	 .slider.round {
+        border-radius: 34px;
+     }
+
+     .slider.round:before {
+        border-radius: 50%;
+     }
 
 html {
-	color: #222;
 	font-family: Neue Montreal;
 	line-height: 1.5
 }
@@ -425,7 +498,7 @@ html:not(.has-scroll-init) {
 }
 
 a {
-	color: #272727;
+	color: #4CD81F;
 	transition: color .3s cubic-bezier(.215, .61, .355, 1)
 }
 
@@ -433,7 +506,7 @@ a {
 
 	a:focus,
 	a:hover {
-		color: #fff
+		color: #5129AE
 	}
 }
 
@@ -850,7 +923,6 @@ h6 {
 }
 
 .o-scroll {
-	background-color: #d4c9c9;
 	overflow: hidden
 }
 
@@ -899,7 +971,6 @@ h6 {
 }
 
 .o-image_wrapper {
-	background-color: #d4c9c9;
 	overflow: hidden;
 	position: relative
 }
@@ -1172,7 +1243,6 @@ html.is-ready .c-header_logo {
 }
 
 .c-fixed_wrapper {
-	background-color: #d4c9c9;
 	overflow: hidden;
 	position: relative
 }
@@ -1518,16 +1588,6 @@ html:not(.has-scroll-smooth) .c-fixed {
 	}
 }
 
-.c-speed-block_bubble {
-	color: #d4c9c9;
-	font-size: 1.25rem;
-	padding: 1.5rem 2.5rem;
-	position: absolute;
-	right: 20px;
-	top: 30%;
-	z-index: 1
-}
-
 .c-speed-block_bubble.-right {
 	right: -30px
 }
@@ -1705,7 +1765,6 @@ html:not(.has-scroll-smooth) .c-fixed {
 
 .c-lerp-block_index {
 	align-items: center;
-	color: #d4c9c9;
 	display: inline-flex;
 	font-size: 1.25rem;
 	height: 2.8125rem;
