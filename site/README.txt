@@ -1,0 +1,1 @@
+This folder is not part of the game. Here are the files of the Github Pages website.
