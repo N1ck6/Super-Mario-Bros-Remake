@@ -1,5 +1,5 @@
 <p align="center">
-<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/main.png" />
+<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/main.png" />
 <p align="center">
 <a href="https://git.io/typing-svg" target="_blank"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=40&duration=4000&pause=200&color=7457B7&center=true&vCenter=true&width=650&lines=Remake+of+Super+Mario+Bros.;Made+with+Python.;%E2%86%93+Download+last+version+%E2%86%93" alt="Typing SVG"></a>
 </p>
