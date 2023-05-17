@@ -11,8 +11,13 @@
 ## Usage
 
 ```html
-* https://github.com/SchoolPygame/Project/archive/refs/heads/main.zip
+* https://github.com/SchoolPygame/Project/releases/download/3723679/Game.zip
 
+App
+Unzip the downloaded archive
+Run main.exe
+
+Python	
 * $ pip install -r requirements.txt
 * $ python main.py
 ```
