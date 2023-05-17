@@ -1648,11 +1648,6 @@ class Player(pg.sprite.Sprite):
                         hits[0].animate()
                         play('bump', 0, vol2)
                         hits[0].update()
-                        if not hits[0].event_finish:
-                            if hits[0].item_type == 'coin':
-                                play('coin', 0, vol2)
-                            else:
-                                play('appear', 0, vol2)
                         if hits[0].event_finish and not hits[0].is_busy:
                             if hits[0].item_type == 'coin':
                                 Coin(item_sprites, all_sprites, hits[0].rect.x, hits[0].rect.y)
@@ -1864,11 +1859,10 @@ class Item(pg.sprite.Sprite):
         player.time = 10
         if self.type == 'speed':
             if not player.star:
-                music = False
                 stop('theme' + str(current_level))
                 play('star', 0, vol1)
             player.speed = 5
-            player.jumpspeed = -15.5
+            player.jumpspeed = -edin / 3.2
             pg.time.set_timer(pg.USEREVENT, 1000)
             player.speed_time = 10
             player.star = True
@@ -2691,9 +2685,6 @@ def pre_start():
     else:
         record = font_medium.render(f'Record:{records[current_level - 1]}', True, White)
     while run:
-        for e in pg.event.get():
-            if e.type == pg.QUIT:
-                run = False
         screen.fill((0, 0, 0))
         screen.blit(font_verylarge.render('GOOD LUCK', True, White), ((width - 360) / 2, height / 2))
         screen.blit(font_medium.render(name, True, White), (20, 20))
@@ -2709,6 +2700,9 @@ def pre_start():
             break
         pg.display.update()
         clock.tick(fps)
+        for e in pg.event.get():
+            if e.type == pg.QUIT:
+                run = False
     stop("all")
     play("menu", -1, vol1)
 
@@ -2717,6 +2711,7 @@ def New_Game():
     global Game_over, seconds, points_count, current_level, Level, run, running, screen, running2, name
     pg.display.set_caption('Super Mario Bros.')
     stop("menu")
+    play("menu", -1, vol1)
     Game_over = False
     running2 = False
     points_count = 0
@@ -2732,7 +2727,6 @@ def New_Game():
         world = font_medium.render(f'WORLD 1-{str(len(records))}', True, White)
     else:
         world = font_medium.render(f'GAME COMPLETED!', True, White)
-    play("menu", -1, vol1)
     while run:
         screen.fill('#5c94fc')
         screen.blit(skin('bg_ground', (100 * edin, edin * 2)), (0, height - edin * 2))
@@ -2757,11 +2751,11 @@ def New_Game():
                 world = font_medium.render(f'GAME COMPLETED!', True, White)
         if exit_b.pressed(screen):
             run = False
+        pg.display.update()
         for event in pg.event.get():
             if event.type == pg.QUIT:
+                run = False
                 pg.quit()
-                quit()
-        pg.display.update()
 
 
 def levels():
@@ -3009,8 +3003,7 @@ def settings():
             run = False
         for event in pg.event.get():
             if event.type == pg.QUIT:
-                pg.quit()
-                quit()
+                run = False
             one.press(event)
             two.press(event)
             if event.type == pg.KEYDOWN:
@@ -3084,7 +3077,7 @@ def main():
                     if player.speed_time == 0 and player.star:
                         stop('star')
                         player.speed = 4
-                        player.jumpspeed = -14.5
+                        player.jumpspeed = -edin / 3.4
                         player.speed_time = 0
                         player.star = False
                         if not player.animate:
