@@ -1,0 +1,9 @@
+Mario
+On
+Off
+1.0
+On
+1.0
+Off
+100
+small False small False small False small False
