@@ -1,5 +1,5 @@
 <p align="center">
-<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/main.png" />
+<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/main.png"/></p>
 <p align="center">
 <a href="https://git.io/typing-svg" target="_blank"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=40&duration=4000&pause=200&color=7457B7&center=true&vCenter=true&width=650&lines=Remake+of+Super+Mario+Bros.;Made+with+Python.;%E2%86%93+Download+last+version+%E2%86%93" alt="Typing SVG"></a>
 </p>
@@ -11,13 +11,20 @@
 ## Usage
 
 ```html
-* https://github.com/SchoolPygame/Project/releases/download/3723679/Game.zip
-
 App
+
 Unzip the downloaded archive
-Run main.exe
+Run SuperMarioBros.exe
+
+Installer
+
+Download the installer and run it
+Run SuperMarioBros.exe
 
 Python	
+
+Download Game folder and use pip to run game
+* https://github.com/SchoolPygame/Project/releases/
 * $ pip install -r requirements.txt
 * $ python main.py
 ```
@@ -33,6 +40,10 @@ Python
 There are four levels. On last you will encounter a final boss.<br>
 You can change volume, name or buttons in settings.<br>
 Almost everything is the same as in the original game.
+
+## Level pictures
+
+<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/levels.png"/></p>
 
 ## Controls
 
