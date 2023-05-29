@@ -11,6 +11,9 @@
 ## Usage
 
 ```html
+First, go to the latest release of the game
+https://github.com/SchoolPygame/Project/releases/tag/3b5c449
+
 App
 
 Unzip the downloaded archive
@@ -23,8 +26,7 @@ Run SuperMarioBros.exe
 
 Python	
 
-Download Game folder and use pip to run game
-* https://github.com/SchoolPygame/Project/releases/
+Download the source code then use pip to install the requirements and run the game
 * $ pip install -r requirements.txt
 * $ python main.py
 ```
