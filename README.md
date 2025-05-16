@@ -8,6 +8,21 @@
 <a href="https://github.com/SchoolPygame/Project/archive/refs/heads/main.zip" target="_blank"><img width="100" height="26" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Github files"/></a>
 </p>
 
+## Info
+
+There are four levels. On last you will encounter a final boss.<br>
+You can change volume, name or buttons in settings.<br>
+Almost everything is the same as in the original game.
+
+### Shoutout
+
+A big shoutout to my friend and collaborator, [Eugene](https://github.com/BedniChillGuy)!  
+We worked together on this project, and he helped me a lot to make this game real.
+
+## Level pictures
+
+<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/levels.png"/></p>
+
 ## Usage
 
 ```html
@@ -36,16 +51,6 @@ Download the source code then use pip to install the requirements and run the ga
 ```html
 * pygame
 ```
-
-## Info
-
-There are four levels. On last you will encounter a final boss.<br>
-You can change volume, name or buttons in settings.<br>
-Almost everything is the same as in the original game.
-
-## Level pictures
-
-<img height="100%" width="100%" src="https://github.com/SchoolPygame/Project/raw/main/site/images/levels.png"/></p>
 
 ## Controls
 
